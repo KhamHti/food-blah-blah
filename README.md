@@ -1,6 +1,7 @@
 ## Depencies
 
 npm i contentful
+npm i dotenv
 
 
 ## Getting Started

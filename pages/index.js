@@ -1,3 +1,4 @@
+import RecipeCard from "@/components/RecipeCard";
 import { createClient } from "contentful";
 
 export const getStaticProps = async () => {
@@ -17,5 +18,11 @@ export const getStaticProps = async () => {
 
 export default function Recipes({ recipes }) {
   // console.log(recipes);
-  return <div className="recipe-list">Recipe List</div>;
+  return (
+    <div className="recipe-list">
+      {recipes.map((recipe) => (
+        <RecipeCard key={recipe.sys.id} recipe={recipe} />
+      ))}
+    </div>
+  );
 }

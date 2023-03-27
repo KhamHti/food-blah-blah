@@ -2,6 +2,7 @@
 
 npm i contentful
 npm i dotenv
+npm i @contentful/rich-text-react-renderer
 
 
 ## Getting Started
